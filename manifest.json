@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "cst",
+  "description": "chrome api thing",
+  "version": "1.0",
+
+  "permissions": [
+    "https://hackerlogin.fedsso.dogspace.com/"
+  ],
+  "content_scripts": [
+  {
+    "matches": ["https://hackerlogin.fedsso.dogspace.com/*"],
+    "js": ["jquery-2.1.1.min.js", "cst.js"],
+    "run_at": "document_end"
+  }
+  ]
+}
